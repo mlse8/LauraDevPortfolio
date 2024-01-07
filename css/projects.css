@@ -1,0 +1,80 @@
+.projects-title{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.projects-title{
+    margin-bottom: .5rem;
+}
+.projects-select-options{
+    width: 100%;
+}
+.projects-select-options select{
+    width: 100%;
+    padding: .2rem;
+    border-radius: .5rem;
+    background-color: var(--background);
+    outline: none;
+}
+.projects-cards{ 
+    max-width: 1000px;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card{
+    width: max(490px, 60vmin);
+    height: max(440px, 60vmin);
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #FFF;
+    overflow: hidden;
+}
+.card-title{
+    height: 60%;
+}
+.card-title h3{
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+.card-title img{
+    width: 100%;
+    height: calc(100% - 50px);
+}
+.card-info{
+    height: 40%;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+.card-info a{
+    margin: 0 .3rem;
+}
+.card-info p{
+    letter-spacing: 1px;
+}
+
+@media screen and (width >= 768px){
+    .projects-select-options{
+        width: 20%;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+    .projects-select-options select{
+        font-size: 1.2rem;
+    }
+    .card-info p{
+        font-size: 1.1rem;
+    }
+}  
+@media screen and (width >= 768px) and (height >= 1000px){
+    .card-info p{
+        font-size: 1.4rem;
+    }
+} 

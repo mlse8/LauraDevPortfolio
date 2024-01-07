@@ -1,0 +1,70 @@
+.contact-title{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+.contact-title h2{
+    margin-bottom: 1rem;
+}
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+.contact-form form fieldset{
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    border: none;
+}
+.contact-form input:not(.btn),
+.contact-form textarea{
+    background-color: #162038b9;
+    border: none;
+    outline: none;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.contact-form input:focus:not(.btn),
+.contact-form textarea:focus{
+    box-shadow: 2px 2px 5px var(--btn);
+}
+.contact-form textarea{
+    height: 180px;
+    resize: vertical;
+}
+.contact-form .btn{
+    width: 100%;
+    padding: .5rem;
+    margin-top: .3rem;
+    border: none;
+    cursor: pointer;
+}
+.contact-form .btn:hover{
+    transform: none;
+}
+.error{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-size: .8rem;
+}
+.error > *{
+    color: #fa3939;
+}
+.contact-form input.error,
+.contact-form textarea.error,
+.contact-form input.error:focus,
+.contact-form textarea.error:focus{
+    border: 1px solid #fa3939;
+    box-shadow: 2px 2px 5px #fa3939b0;
+}
+
+@media screen and (width >= 768px){
+    .error p{
+        font-size: 1rem;
+    }
+}

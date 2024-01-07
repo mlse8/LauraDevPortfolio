@@ -1,0 +1,86 @@
+.portada{
+    height: 90dvh;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.portada-title{
+    padding: 0 3rem;
+    text-align: center;
+}
+.portada-title h1{
+    margin-bottom: .5rem;
+    font-family: 'ResotYg PERSONAL USE', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.portada-title p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+}
+.portada-title .btn{
+    display: none;
+}
+.btn{
+    padding: .7rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--btn);
+    transition: transform .3s;
+}
+.btn:hover{
+    background-color: var(--btn-hover);
+    transform: scale(1.05);
+}
+.portada-img{
+    width: 260px;
+    height: 260px;
+    border-radius: 60% 40% 36% 64% / 65% 65% 35% 35%;
+    background-color: var(--nav);
+    display: flex;
+    overflow: hidden;
+}
+.portada-img img{
+    width: 75%;
+    margin: auto;
+    filter: drop-shadow(4px 2px 4px #000);
+}
+
+@media screen and (width >= 768px){
+    .portada-title h1{
+        font-size: 2.5rem;
+    }
+    .portada-title p,
+    .portada .btn{
+        font-size: 1.7rem;
+    }
+    .portada-img{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (width >= 960px){
+    .portada{
+        flex-direction: row;
+    }
+    .portada-title{
+        padding: 0;
+    }
+    .portada .portada-title .btn{
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    .portada-img{
+        order: -1;
+        width: 320px;
+        height: 320px;
+    }
+    .portada .btn{
+        display: none;
+    }
+}

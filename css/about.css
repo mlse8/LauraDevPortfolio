@@ -1,0 +1,83 @@
+.me,
+.projects,
+.contact{
+    padding: 3.5rem 0rem;
+}
+.me-title{
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #162038b9;
+}
+.me-title h2{
+    margin-bottom: 1rem;
+}
+.me-skills{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.me-skills h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.skill{
+    min-width: 75px;
+    padding: .5rem 0;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all .4s;
+}
+a.skill{
+    cursor: pointer;
+}
+.skill i{
+    font-size: 3rem;
+}
+.skill p{
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+.skill:hover{
+    background-color: var(--btn);
+    transform: scale(1.1);
+}
+@media screen and (width >= 768px){
+    .skills{
+        gap: 1rem;
+    }
+    .skill{
+        width: 85px;
+    }
+    .skill i{
+        font-size: 4rem;
+    }
+    .skill p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (width >= 768px) and (height >= 900px){
+    .me-title{
+        margin-bottom: 4rem;
+    }
+}
+@media screen and (width >= 1024px){
+    .skills{
+        gap: 2rem;
+    }
+    .skill{
+        width: 100px;
+    }
+    .skill i{
+        font-size: 4.5rem;
+    }
+}

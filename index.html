@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce un poco sobre mí y mis proyectos">
+    <meta name="keywords" content="portfolio, front end, back end, web developer, full stack">
+    <meta name="author" content="Laura Escalante">
+    <meta property="og:title" content="Laura Escalante Portfolio">
+    <meta property="og:owners" content="Laura Escalante">
+    <meta property="og:type" content=":project">
+    <meta name="theme-color" content="#0d1321">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="shortcut icon" href="assets/img/le.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef3f394e31.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('OINCECXLUGizTEzvp')</script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Portfolio Laura Escalante</title>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="assets/img/le.png" alt="logo">
+                <a href="#index">LE</a>
+            </div>
+            <div class="checkbtn">
+                <i id="open" class="fa-solid fa-bars"></i>
+                <i id="close" class="fa-solid fa-xmark none"></i>
+            </div>
+            <div class="navbar-menu none">
+                <div class="navbar-list">
+                    <ul>
+                        <li class="nav-link active">
+                            <a href="#index">
+                                <i class="fa-solid fa-house"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#me">
+                                <i class="fa-solid fa-user"></i>
+                                Sobre mi
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#projects">
+                                <i class="fa-solid fa-folder"></i>
+                                Proyectos
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#contact">
+                                <i class="fa-solid fa-envelope"></i>
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-social">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/maria-laura-escalante/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mlse8" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:laura088.le@gmail.com" target="_blank">
+                                <i class="fa-solid fa-at"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Seccion inicio -->
+        <section id="index" class="portada">
+            <div class="portada-title">
+                <h1>LAURA ESCALANTE</h1>
+                <p>WEB DEVELOPER</p>
+                <a href="assets/CV-Escalante-Maria-Laura-Sabrina.pdf" download="CV-Escalante-Maria-Laura-Sabrina.pdf" class="btn">Descarga mi CV</a>
+            </div>
+            <figure class="portada-img">
+                <img src="assets/img/perfil.png" alt="perfil">
+            </figure>
+            <a href="assets/CV-Escalante-Maria-Laura-Sabrina.pdf" download="CV-Maria-Laura-Sabrina-Escalante.pdf" class="btn">Descarga mi CV</a>
+        </section> 
+        <!-- Seccion sobre mi -->
+        <section id="me" class="me">
+            <div class="me-title">
+                <h2>SOBRE MI</h2>
+                <p>Soy desarrolladora web en formación. Mi pasión por la programación me llevó a aprender distintos lenguajes y a adentrarme en un nuevo mundo, donde constantemente busco mejorar mis habilidades para ofrecer soluciones tecnológicas.
+                </p>
+            </div>
+            <div class="me-skills">
+                <h2>CONOCIMIENTOS</h2>
+                <div class="skills">
+                    <a href="https://drive.google.com/file/d/1T7jGfYT5XrXDEU-ou_BEwobQtUF3arHb/view?usp=drive_link" class="skill" target="_blank">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1T7jGfYT5XrXDEU-ou_BEwobQtUF3arHb/view?usp=drive_link" class="skill" target="_blank">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1zLqOy1lTjqUfFk2-kdC6sNlOJ2BXprEV/view?usp=drive_link" class="skill" target="_blank">
+                        <i class="fa-brands fa-square-js"></i>
+                        <p>JavaScript</p>
+                    </a>
+                    <div class="skill">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-figma"></i>
+                        <p>Figma</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1sQrGbuEcEeb55XfOHfCXy19lOW-4TzTV/view?usp=drive_link" class="skill" target="_blank">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>GIT</p>
+                    </a>
+                    <div class="skill">
+                        <i class="fa-brands fa-github"></i>
+                        <p>Github</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1wuYRXX3cZxI3GLlv-MOkv3h0F4kxQVWP/view?usp=drive_link" class="skill" target="_blank">
+                        <i class="fa-brands fa-python"></i>
+                        <p>Python</p>
+                    </a>
+                    <div class="skill">
+                        <i class="fa-brands fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion proyectos -->
+        <section id="projects" class="projects">
+            <h2 class="projects-title">PROYECTOS</h2>
+            <div class="projects-select-options">
+                <select id="projects-options">
+                    <option selected value="Todos">Todos</option>
+                    <option value="Fullstack">Fullstack</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="UX">Diseño UX</option>
+                </select>
+            </div>
+            <div class="projects-cards"></div>
+        </section>
+        <!-- Seccion contacto -->
+        <section id="contact" class="contact">
+            <div class="contact-title">
+                <h2>CONTACTO</h2>
+                <p>Si te gustaron mis trabajos puedes contactarme por mis redes sociales o completar el siguiente formulario</p>
+            </div>
+            <div class="contact-form">
+                <form method="POST">
+                    <fieldset>
+                        <label for="name">Nombre y Apellido *</label>
+                        <input type="text" name="name" id="name" placeholder="Maria Laura Escalante">
+                        <span class="error name-error none">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p class="error-text">Por favor, ingrese un nombre válido</p>
+                        </span>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" placeholder="laura088.le@gmail.com">
+                        <span class="error email-error none">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p class="error-text">Por favor, ingrese un mail válido</p>
+                        </span>
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Mensaje *</label>
+                        <textarea name="message" id="message" placeholder="Escribe tu mensaje"></textarea>
+                        <span class="error message-error none">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p class="error-text">Por favor, completa este campo</p>
+                        </span>
+                    </fieldset>
+                    <input type="submit" class="btn" id="button" value="Enviar"></input>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 - Desarrollado por Laura Escalante</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
